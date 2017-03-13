@@ -9,7 +9,7 @@ https://www.googleapis.com/oauth2/v1/userinfo
 ```
 
 Arguments:
-* `alt`: `"json"`.
+* `alt`: `json`.
 * `access_token`: Your OAuth2 Access Token.
 
 
