@@ -12,7 +12,7 @@ Arguments:
 * `alt`: `json`.
 * `access_token`: Your OAuth2 Access Token.
 
-### Sample JSON
+### JSON Response Examples
 OAuth Scope = `profile`:
 ```json
 {
@@ -41,7 +41,7 @@ OAuth Scope = `email`:
 OAuth Scope = `openid`:
 ```json
 {
- "id": "114213240866143955837",
+ "id": "1142132<...Secret...>",
  "name": "",
  "given_name": "",
  "family_name": "",
