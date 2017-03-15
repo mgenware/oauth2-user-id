@@ -1,5 +1,5 @@
-# oauth2-user-id
-Obtain user ID via OAuth2 on different sites
+# OAuth2 User ID
+Obtain User ID via OAuth2 AccessToken on different sites.
 
 ## Google
 
