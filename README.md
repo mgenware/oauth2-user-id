@@ -67,5 +67,6 @@ Default Scope: `public_profile`:
 ```json
 {
   "name":"Ryan Liu",
-  "id":"170879<...Secret...>"}
+  "id":"170879<...Secret...>"
+}
 ```
