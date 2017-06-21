@@ -167,3 +167,47 @@ Scope = `user`:
   }
 }
 ```
+
+## Weibo
+Note that Weibo User ID is returned along with OAuth access token, see [Docs](http://open.weibo.com/wiki/2/oauth2/access_token/en).
+### API
+```
+https://api.weibo.com/oauth2/access_token
+```
+
+Method: `POST`.
+
+Arguments:
+* `client_id`: OAuth2 client ID.
+* `client_secret`: OAuth2 client secret.
+* `grant_type`: should be `authorization_code` as [Docs](http://open.weibo.com/wiki/2/oauth2/access_token/en) say.
+* `code`: the authorization code.
+* `redirect_uri`: callback URL.
+
+### Response Examples
+```json
+ {
+       "access_token": "ACCESS_TOKEN",
+       "expires_in": 1234,
+       "remind_in":"798114",
+       "uid":"12341234"
+ }
+```
+
+## QQ
+[Docs](http://wiki.connect.qq.com/%E5%BC%80%E5%8F%91%E6%94%BB%E7%95%A5_client-side).
+### API
+```
+https://graph.qq.com/oauth2.0/me
+```
+
+Method: `GET`.
+
+Arguments:
+* `access_token`: Your OAuth2 Access Token.
+
+### Response Example
+Note that the response text is not a valid JSON.
+```
+callback( {"client_id":"YOUR_APPID","openid":"YOUR_OPENID"} );
+```
