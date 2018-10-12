@@ -1,5 +1,5 @@
 # OAuth2 User ID
-Obtain User ID via OAuth2 AccessToken on different sites.
+How to get user ID and user display name via OAuth2 API on different sites.
 
 ## Google
 
@@ -169,7 +169,7 @@ Scope = `user`:
 ```
 
 ## Weibo
-Note that Weibo User ID is returned along with OAuth access token, see [Docs](http://open.weibo.com/wiki/2/oauth2/access_token/en).
+Note that Weibo user ID is returned along with OAuth access token, see [Docs](http://open.weibo.com/wiki/2/oauth2/access_token/en).
 ### API
 ```
 https://api.weibo.com/oauth2/access_token
@@ -207,7 +207,7 @@ Arguments:
 * `access_token`: Your OAuth2 Access Token.
 
 ### Response Example
-Note that the response text is not a valid JSON.
+**Note that the response text from QQ is not a valid JSON, you need to parse it carefully.**
 ```
 callback( {"client_id":"YOUR_APPID","openid":"YOUR_OPENID"} );
 ```
