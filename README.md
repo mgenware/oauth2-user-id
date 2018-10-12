@@ -15,39 +15,19 @@ Arguments:
 * `access_token`: Your OAuth2 Access Token.
 
 ### JSON Response Examples
-OAuth Scope = `profile`:
+OAuth Scope = `"openid", "email", "profile"`:
 ```json
 {
- "id": "11421324<...Secret...>",
- "name": "Ryan Liu",
- "given_name": "Ryan",
- "family_name": "Liu",
- "picture": "https://lh4.googleusercontent.com/-inpJebsD9oE/AAAAAAAAAAI/AAAAAAAAAAs/rfzWSJk5zEI/photo.jpg",
- "locale": "en"
-}
-```
-
-OAuth Scope = `email`:
-```json
-{
- "id": "1142132<...Secret...>",
- "email": "<...Your Email...>",
- "verified_email": true,
- "name": "",
- "given_name": "",
- "family_name": "",
- "picture": "https://lh4.googleusercontent.com/-inpJebsD9oE/AAAAAAAAAAI/AAAAAAAAAAs/rfzWSJk5zEI/photo.jpg"
-}
-```
-
-OAuth Scope = `openid`:
-```json
-{
- "id": "1142132<...Secret...>",
- "name": "",
- "given_name": "",
- "family_name": "",
- "picture": "https://lh4.googleusercontent.com/-inpJebsD9oE/AAAAAAAAAAI/AAAAAAAAAAs/rfzWSJk5zEI/photo.jpg"
+  "id": "1041407476129264...",
+  "email": "mingxiao@secret.com",
+  "verified_email": true,
+  "name": "Ming Xiao",
+  "given_name": "Ming",
+  "family_name": "Xiao",
+  "link": "https://plus.google.com/secret",
+  "picture": "https://lh6.googleusercontent.com/secret.jpg",
+  "locale": "en",
+  "hd": "secret.com"
 }
 ```
 
